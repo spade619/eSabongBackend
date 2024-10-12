@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cashins",
+  "info": {
+    "name": "Cashin",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "amount": {
+      "type": "decimal"
+    }
+  }
+}

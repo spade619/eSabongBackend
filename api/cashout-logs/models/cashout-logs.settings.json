@@ -1,0 +1,38 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cashout_logs",
+  "info": {
+    "name": "Cashout Logs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "assign_to": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "details": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Approved",
+        "Rejected"
+      ],
+      "required": true
+    },
+    "amount": {
+      "type": "decimal"
+    }
+  }
+}

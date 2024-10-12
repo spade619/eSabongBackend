@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "login_logs",
+  "info": {
+    "name": "Login Logs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "event": {
+      "type": "string"
+    },
+    "country": {
+      "type": "string"
+    },
+    "ipAddress": {
+      "type": "string"
+    }
+  }
+}

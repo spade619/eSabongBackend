@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/fakebets",
+      "handler": "fakebet.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fakebets/count",
+      "handler": "fakebet.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/fakebets/:id",
+      "handler": "fakebet.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/fakebets",
+      "handler": "fakebet.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/fakebets/:id",
+      "handler": "fakebet.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/fakebets/:id",
+      "handler": "fakebet.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

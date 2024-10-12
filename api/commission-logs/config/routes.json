@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/commission-logs",
+      "handler": "commission-logs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commission-logs/count",
+      "handler": "commission-logs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commission-logs/:id",
+      "handler": "commission-logs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/commission-logs",
+      "handler": "commission-logs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/commission-logs/:id",
+      "handler": "commission-logs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/commission-logs/:id",
+      "handler": "commission-logs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

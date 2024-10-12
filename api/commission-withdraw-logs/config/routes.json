@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/commission-withdraw-logs",
+      "handler": "commission-withdraw-logs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commission-withdraw-logs/count",
+      "handler": "commission-withdraw-logs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commission-withdraw-logs/:id",
+      "handler": "commission-withdraw-logs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/commission-withdraw-logs",
+      "handler": "commission-withdraw-logs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/commission-withdraw-logs/:id",
+      "handler": "commission-withdraw-logs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/commission-withdraw-logs/:id",
+      "handler": "commission-withdraw-logs.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

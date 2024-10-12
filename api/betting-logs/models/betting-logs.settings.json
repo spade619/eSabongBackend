@@ -1,0 +1,47 @@
+{
+  "kind": "collectionType",
+  "collectionName": "betting_logs",
+  "info": {
+    "name": " Betting Logs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "win",
+        "lose",
+        "draw",
+        "cancel"
+      ]
+    },
+    "fightNumber": {
+      "type": "integer"
+    },
+    "betAmount": {
+      "type": "biginteger"
+    },
+    "team": {
+      "type": "enumeration",
+      "enum": [
+        "wala",
+        "meron",
+        "draw",
+        "cancel"
+      ]
+    },
+    "arena_id": {
+      "model": "arenas"
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

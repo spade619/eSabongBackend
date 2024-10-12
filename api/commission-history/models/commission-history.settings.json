@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commission_histories",
+  "info": {
+    "name": "Commission History",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "game_history_id": {
+      "model": "game-history"
+    },
+    "commision": {
+      "type": "decimal",
+      "default": 0
+    },
+    "player_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "agent_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "regular",
+        "draw",
+        "cancel"
+      ]
+    },
+    "arena_id": {
+      "model": "arenas"
+    }
+  }
+}

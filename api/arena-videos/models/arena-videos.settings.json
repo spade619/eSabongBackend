@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arena_videos",
+  "info": {
+    "name": "Arena Videos",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "videoName": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    },
+    "lowLatencyCode": {
+      "type": "richtext",
+      "required": true
+    },
+    "compatibilityModeCode": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

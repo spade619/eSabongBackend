@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "convert_commission_histories",
+  "info": {
+    "name": "Convert Commission History",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "model": "user",
+      "plugin": "users-permissions"
+    },
+    "amount": {
+      "type": "decimal"
+    }
+  }
+}

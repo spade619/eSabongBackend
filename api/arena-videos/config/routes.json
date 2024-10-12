@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/arena-videos",
+      "handler": "arena-videos.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/arena-videos/count",
+      "handler": "arena-videos.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/arena-videos/:id",
+      "handler": "arena-videos.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/arena-videos",
+      "handler": "arena-videos.customCreate",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/arena-videos/:id",
+      "handler": "arena-videos.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/arena-videos/:id",
+      "handler": "arena-videos.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

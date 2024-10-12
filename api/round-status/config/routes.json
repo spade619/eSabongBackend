@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/round-status",
+      "handler": "round-status.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/round-status",
+      "handler": "round-status.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/round-status",
+      "handler": "round-status.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

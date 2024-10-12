@@ -1,0 +1,32 @@
+{
+  "kind": "collectionType",
+  "collectionName": "game_histories",
+  "info": {
+    "name": "Game History",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "arena_id": {
+      "model": "arenas"
+    },
+    "outcome": {
+      "type": "enumeration",
+      "enum": [
+        "meron",
+        "wala",
+        "cancel",
+        "draw"
+      ]
+    },
+    "round": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

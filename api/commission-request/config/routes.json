@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/commission-requests",
+      "handler": "commission-request.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commission-requests/count",
+      "handler": "commission-request.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commission-requests/:id",
+      "handler": "commission-request.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/commission-requests",
+      "handler": "commission-request.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/commission-requests/:id",
+      "handler": "commission-request.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/commission-requests/:id",
+      "handler": "commission-request.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/commission-requests/processRequest",
+      "handler": "commission-request.processRequest",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/commission-requests/commissionRequest",
+      "handler": "commission-request.commissionRequest",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

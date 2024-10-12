@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/current-rounds",
+      "handler": "current-round.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/current-rounds/count",
+      "handler": "current-round.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/current-rounds/:id",
+      "handler": "current-round.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/current-rounds",
+      "handler": "current-round.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/current-rounds/:id",
+      "handler": "current-round.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/current-rounds/:id",
+      "handler": "current-round.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/current-rounds/:user_id/:arena_id",
+      "handler": "current-round.getCurrentPayout",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

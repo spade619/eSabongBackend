@@ -1,0 +1,18 @@
+{
+  "kind": "collectionType",
+  "collectionName": "fakebets",
+  "info": {
+    "name": "fakebet"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "bet": {
+      "type": "integer"
+    }
+  }
+}

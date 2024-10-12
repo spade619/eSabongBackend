@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "cashout_requests",
+  "info": {
+    "name": "Cashout Request",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Approved",
+        "Rejected",
+        "Pending"
+      ],
+      "default": "Pending"
+    },
+    "amount": {
+      "type": "decimal",
+      "required": true
+    },
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    }
+  }
+}

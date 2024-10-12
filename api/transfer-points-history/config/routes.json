@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/transfer-points-histories",
+      "handler": "transfer-points-history.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transfer-points-histories/count",
+      "handler": "transfer-points-history.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transfer-points-histories/:id",
+      "handler": "transfer-points-history.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transfer-points-histories",
+      "handler": "transfer-points-history.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/transfer-points-histories/:id",
+      "handler": "transfer-points-history.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/transfer-points-histories/:id",
+      "handler": "transfer-points-history.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transfer-points-histories/transferUser",
+      "handler": "transfer-points-history.transferUser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transfer-points-histories/superadminTransfer",
+      "handler": "transfer-points-history.superadminTransfer",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/transfer-points-histories/myHistory/:senderId",
+      "handler": "transfer-points-history.myHistory",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

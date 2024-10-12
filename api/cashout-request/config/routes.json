@@ -1,0 +1,76 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cashout-requests",
+      "handler": "cashout-request.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cashout-requests/count", 
+      "handler": "cashout-request.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cashout-requests/:id",
+      "handler": "cashout-request.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cashout-requests",
+      "handler": "cashout-request.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cashout-requests/:id",
+      "handler": "cashout-request.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cashout-requests/:id",
+      "handler": "cashout-request.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cashout-requests/user/:user_id",
+      "handler": "cashout-request.findByUser",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cashout-requests/processRequest",
+      "handler": "cashout-request.processRequest",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cashout-requests/requestCashout",
+      "handler": "cashout-request.requestCashout",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

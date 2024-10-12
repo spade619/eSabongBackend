@@ -1,0 +1,42 @@
+{
+  "kind": "collectionType",
+  "collectionName": "current_rounds",
+  "info": {
+    "name": "Current Round",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "team": {
+      "type": "enumeration",
+      "enum": [
+        "meron",
+        "wala",
+        "draw"
+      ]
+    },
+    "amount": {
+      "type": "biginteger"
+    },
+    "user_id": {
+      "unique": true,
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "arena_id": {
+      "model": "arenas"
+    },
+    "round": {
+      "type": "integer"
+    },
+    "ghostMode": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_details",
+  "info": {
+    "name": "User Details",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "unique": true,
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "paymentMode": {
+      "type": "string"
+    },
+    "accountName": {
+      "type": "string"
+    },
+    "accountNumber": {
+      "type": "biginteger"
+    },
+    "additionalAccountDetails": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "round_statuses",
+  "info": {
+    "name": "Round Status",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Status": {
+      "type": "enumeration",
+      "enum": [
+        "Open",
+        "Close"
+      ],
+      "default": "Open",
+      "required": true
+    },
+    "round": {
+      "type": "integer",
+      "default": 1,
+      "min": 0
+    }
+  }
+}

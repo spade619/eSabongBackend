@@ -1,0 +1,62 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/commission-histories",
+      "handler": "commission-history.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commission-histories/count",
+      "handler": "commission-history.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commission-histories/:id",
+      "handler": "commission-history.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/commission-histories",
+      "handler": "commission-history.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/commission-histories/:id",
+      "handler": "commission-history.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/commission-histories/:id",
+      "handler": "commission-history.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commission-histories/total-sales",
+      "handler": "commission-history.getTotalSales"
+    },
+    {
+      "method": "GET",
+      "path": "/commission-histories/:arena_id/arena-by-date",
+      "handler": "commission-history.arenaByDate"
+    }
+  ]
+}

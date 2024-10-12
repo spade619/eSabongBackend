@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "transfer_points_histories",
+  "info": {
+    "name": "Transfer Points History",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "amount": {
+      "type": "decimal"
+    },
+    "receiver_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "sender_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "credited_at": {
+      "type": "enumeration",
+      "enum": [
+        "superadmin",
+        "agent"
+      ]
+    }
+  }
+}

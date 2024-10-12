@@ -1,0 +1,60 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/cashout-logs",
+      "handler": "cashout-logs.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cashout-logs/count",
+      "handler": "cashout-logs.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/cashout-logs/:id",
+      "handler": "cashout-logs.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/cashout-logs",
+      "handler": "cashout-logs.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/cashout-logs/:id",
+      "handler": "cashout-logs.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/cashout-logs/:id",
+      "handler": "cashout-logs.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/transfer/points",
+      "handler": "transfer-points-history.transferUser",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

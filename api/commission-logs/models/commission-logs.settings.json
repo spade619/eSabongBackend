@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commission_logs",
+  "info": {
+    "name": "Commission Logs"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "assign_to": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "details": {
+      "type": "text"
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "Approved",
+        "Rejected"
+      ]
+    }
+  }
+}

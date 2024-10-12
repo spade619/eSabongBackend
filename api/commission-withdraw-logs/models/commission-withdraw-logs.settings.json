@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "commission_withdraw_logs",
+  "info": {
+    "name": "Commission Withdraw Logs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_id": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "assign_to": {
+      "plugin": "users-permissions",
+      "model": "user"
+    },
+    "details": {
+      "type": "text"
+    },
+    "amount": {
+      "type": "decimal"
+    }
+  }
+}

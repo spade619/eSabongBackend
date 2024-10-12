@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arenas",
+  "info": {
+    "name": "Arenas",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "arenaLocation": {
+      "type": "string",
+      "required": true
+    },
+    "eventName": {
+      "type": "string",
+      "required": true
+    },
+    "code": {
+      "type": "string"
+    },
+    "plasadaRate": {
+      "type": "decimal",
+      "required": true
+    },
+    "tieRate": {
+      "type": "integer",
+      "required": true
+    },
+    "eventType": {
+      "type": "string",
+      "required": false
+    },
+    "isEnabledDraw": {
+      "type": "boolean",
+      "default": false
+    },
+    "status": {
+      "type": "enumeration",
+      "enum": [
+        "open",
+        "closed",
+        "standby"
+      ],
+      "default": "open"
+    },
+    "arena_video_id": {
+      "model": "arena-videos"
+    },
+    "round": {
+      "type": "integer",
+      "default": 1,
+      "required": true,
+      "min": 0
+    },
+    "arena_players_id": {
+      "plugin": "users-permissions",
+      "collection": "user"
+    },
+    "isDeleted": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
+    "arena_thumbnail": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "isMeronRight": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

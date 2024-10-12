@@ -1,0 +1,68 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/convert-commission-histories",
+      "handler": "convert-commission-history.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/convert-commission-histories/count",
+      "handler": "convert-commission-history.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/convert-commission-histories/:id",
+      "handler": "convert-commission-history.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/convert-commission-histories",
+      "handler": "convert-commission-history.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/convert-commission-histories/:id",
+      "handler": "convert-commission-history.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/convert-commission-histories/:id",
+      "handler": "convert-commission-history.delete",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/commission/convert",
+      "handler": "convert-commission-history.transfer",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/commission/:user_id",
+      "handler": "convert-commission-history.findByUser",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}
